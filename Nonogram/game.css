@@ -1,19 +1,17 @@
+
+
+/* Complaete Game Area */
+
 .game-area {
-    margin: 10vw;
+    margin-top: 7vw;
 }
 
-
-
-/* Grid */
 .grid-container {
-    /* display: grid;
-    grid-template-columns: repeat(10, 40px);
-    grid-template-rows: repeat(10,40px);
-    background-color: rgb(250, 210, 158); */
     display: grid;
     grid-template-columns: 100px 411px;
-    grid-template-rows: 100px 412px;
+    grid-template-rows: 100px 411px;
     gap: 5px;
+    justify-content: center;
 }
 
 
@@ -26,34 +24,40 @@
 }
 
 
-/*Sub Grid Styles */
+/*Side Column Grid Styles */
 .sub-grid {
     display: grid;
     height: 100%;
-    gap: 1px;
+    gap: 4.5px;
 }
 .cols {
-    grid-template-columns: repeat(10, 40px);
+    grid-template-columns: repeat(10, 37px);
+    margin-left: 2px;
 }
 .rows {
-    grid-template-rows: repeat(10, 40px);
-
+    grid-template-rows: repeat(10, 37px);
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .sub-grid > div {
     background-color: #D9D9D9;
-    /* border: 1px; */
+    border-radius: 5px;
 }
 
-/* Grid Area Styles */
+
+
+/* Grid/Game Area Styles */
 .sub-grid-area {
     display: grid;
     grid-template-columns: repeat(10, 40px);
     grid-template-rows: repeat(10, 40px);
     gap: 1px;
+    justify-content: space-evenly;
 }
 
 .sub-grid-area > button {
     background-color: #F5FFFD;
     border: 1px;
 }
+
