@@ -1,0 +1,38 @@
+/* Text designs */
+
+:root {
+    font-family: "Monaco", monospace;
+}
+
+
+/* Nav bar designs */
+
+.nav-header {
+    background-color: #4b8189;
+    color: white;
+    font-size: 2.75vw;
+    text-size-adjust: auto;
+    text-decoration: underline;
+    min-width: 100%;
+    padding: 0.8vw 2vw;
+}
+
+
+/* Home page styles */
+
+.home-btns {
+    margin: auto;
+    margin-top: 10vw;
+    width: 25%;
+}
+
+.btn-continue {
+    background-color: #48D0D9;
+    margin: 5vw 0;
+}
+
+.btn-new {
+    background-color: #A1DBF1;
+    margin: 0.5vw 0;
+    color: white;
+}
