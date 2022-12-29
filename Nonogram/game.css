@@ -61,3 +61,12 @@
     border: 1px;
 }
 
+
+/* Game controls */
+
+.game-btns {
+    margin-top: 3vw;
+    width:min-content;
+    justify-content: center;
+}
+
