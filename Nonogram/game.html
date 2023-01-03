@@ -25,8 +25,26 @@
             <div class="empty-cell"></div>
             <div class="top-row">
                 <div class="sub-grid cols">
-                    <div class="sub-grid-col"></div>
-                    <div class="sub-grid-col"></div>
+                    <div class="sub-grid-col">
+                        <div style="display:grid;">
+                            <div class="grid-numbers">
+                              <span>1</span>
+                              <span>2</span>
+                              <span>3</span>
+                              <span>10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-grid-col">
+                        <div style="display:grid;">
+                            <div class="grid-numbers">
+                              <span>1</span>
+                              <span>1</span>
+                              <span>1</span>
+                              <span>20</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="sub-grid-col"></div>
                     <div class="sub-grid-col"></div>
                     <div class="sub-grid-col"></div>
@@ -39,7 +57,14 @@
             </div>
             <div class="left-col">
                 <div class="sub-grid rows">
-                    <div class="sub-grid-row"></div>
+                    <div class="sub-grid-row">
+                        <div class="text-justified">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>1</span>
+                            <span>20</span>
+                        </div>
+                    </div>
                     <div class="sub-grid-row"></div>
                     <div class="sub-grid-row"></div>
                     <div class="sub-grid-row"></div>
@@ -53,6 +78,9 @@
             </div>
             <div class="grid-area">
                 <div class="sub-grid-area">
+                    <button class="fill"></button>
+                    <button class="fill"></button>
+                    <button class="fill"></button>
                     <button></button>
                     <button></button>
                     <button></button>
@@ -63,12 +91,9 @@
                     <button></button>
                     <button></button>
                     <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                    <button class="cross">X</button>
+                    <button class="cross">X</button>
+                    <button class="cross">X</button>
                     <button></button>
                     <button></button>
                     <button></button>
@@ -156,13 +181,17 @@
                 </div>
             </div>
         </div>
-        <div class="row game-btns">
-            <div class="col">
+        <div class="row btn-row">
+            <div class="col-2 game-btns">
+                <button type="button" class="btn btn-secondary">Undo</button>
+            </div>
+            <div class="col-2 game-btns">
                 <div class="btn-group" role="group" aria-label="Game controls">
                     <button type="button" class="btn btn-primary">X</button>
                     <button type="button" class="btn btn-secondary">Fill</button>
                 </div>
             </div>
+
         </div>
     </section>
 

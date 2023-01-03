@@ -1,9 +1,12 @@
 
+/* Styles used over page */
+
 
 /* Complaete Game Area */
 
 .game-area {
     margin-top: 7vw;
+    margin-bottom: 7vw;
 }
 
 .grid-container {
@@ -14,12 +17,9 @@
     justify-content: center;
 }
 
-
-
 .grid-area {
     grid-column-start: 2;
     grid-row-start: 2;
-    background-color: black;
     border: 1px solid;
 }
 
@@ -42,31 +42,65 @@
 
 .sub-grid > div {
     background-color: #D9D9D9;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
+.grid-numbers {
+    display: grid;
+    justify-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+
+.text-justified {
+    text-align-last: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+/* Test column numbers */
+.container > .row {
+    justify-content: center;
+}
 
 
 /* Grid/Game Area Styles */
 .sub-grid-area {
     display: grid;
-    grid-template-columns: repeat(10, 40px);
-    grid-template-rows: repeat(10, 40px);
-    gap: 1px;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    aspect-ratio: 1;
 }
 
 .sub-grid-area > button {
     background-color: #F5FFFD;
-    border: 1px;
+    border: 0.5px black solid;
 }
+
+/* When fill is used */
+.fill {
+    background-color: #3f5764!important;
+}
+
+.cross {
+    font-size: x-large;
+}
+
 
 
 /* Game controls */
 
+.btn-row {
+    margin-top: 2vw;
+    justify-content: center;
+}
+
 .game-btns {
-    margin-top: 3vw;
-    width:min-content;
+    display: flex;
     justify-content: center;
 }
 
