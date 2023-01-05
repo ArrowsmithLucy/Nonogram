@@ -69,14 +69,14 @@
 
 
 /* Grid/Game Area Styles */
-.sub-grid-area {
+.ten-by-ten-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     aspect-ratio: 1;
 }
 
-.sub-grid-area > button {
+.ten-by-ten-grid > button {
     background-color: #F5FFFD;
     border: 0.5px black solid;
 }
