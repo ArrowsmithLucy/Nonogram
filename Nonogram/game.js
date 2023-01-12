@@ -9,31 +9,78 @@ const FILL = 1;
 const CROSS = 2;
 
 
+
+
 /**
  * Function: Generate 10x10 grid
+ * 100 is the size of the grid rows*columns
  */
 function intermediateGrid() {
-    let addBtn = '<button></button>'
-    let output = `
-                <div class="ten-by-ten-grid">
-                ${addBtn.repeat(100)}
-                </div>
-    `
-    document.getElementById("gameGridArea").innerHTML = output
+    let output = ""
+    for(let i=1; i <= 100; i++) {
+        output += `<button class="square" onclick="toggle(${i})" value="${i}" ></button>`
+    }
+    document.getElementById("tenTenGrid").innerHTML = output
 }
+
 
 intermediateGrid()
 
 
-/* Making a matrix with names */
+function fill(i) {
+    let j = i-1
+    let btnValue = document.getElementsByTagName("button")[j]
+
+    if(btnValue.classList.contains("fill")) {
+        return btnValue.classList.remove("fill")
+    }
+
+    if(btnValue.classList.contains("cross")) {
+        btnValue.classList.remove("cross")
+    }
+    
+    btnValue.classList.add("fill")
+    
+}
+
+function cross(i) {
+    let j = i-1
+    let btnValue = document.getElementsByTagName("button")[j]
+    
+    if(btnValue.classList.contains("cross")) {
+        return btnValue.classList.remove("cross")
+    }
+
+    if(btnValue.classList.contains("fill")) {
+        btnValue.classList.remove("fill")
+    }
+    
+    btnValue.classList.add("cross")
+    
+}
 
 
-// function matrixGeneator() {
-//     let intGrid = Array(INTERMEDIATE_ROWS).fill(Array(INTERMEDIATE_COLS).fill(BLANK))
-//     for(let i=0; i < intGrid.length; i++) {
-//         for(let j=0; j < intGrid.length; j++) {
+function toggle(i) {
+    let toggleSwitch = getLocalStorage(TOGGLE)
+    // if (toggleSwitch == 0) {
+    //     //background colour is blue
+    //     //remove fill/cross classes
+    // }
+    if (toggleSwitch == 1) {
+        console.log(getLocalStorage(TOGGLE))
+        fill(i)
+    }
+    else if (toggleSwitch == 2) {
+        console.log(getLocalStorage(TOGGLE))
+        cross(i)
+    }
+}
 
-//         }
-//     }
-// }
 
+function toggleFill() {
+    setLocalStorage(TOGGLE, 1)
+}
+
+function toggleCross() {
+    setLocalStorage(TOGGLE, 2)
+}

@@ -81,14 +81,7 @@
     border: 0.5px black solid;
 }
 
-/* When fill is used */
-.fill {
-    background-color: #3f5764!important;
-}
 
-.cross {
-    font-size: x-large;
-}
 
 
 
@@ -104,3 +97,20 @@
     justify-content: center;
 }
 
+
+
+/* Game controls */
+
+/* 
+.fill {
+    background-color: red;
+} */
+
+/* When fill is used */
+.fill {
+    background-color: #3f5764!important;
+}
+
+.cross {
+    background-color: red!important;
+}
