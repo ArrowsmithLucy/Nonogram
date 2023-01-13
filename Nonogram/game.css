@@ -149,6 +149,6 @@ label[for="fill"] {
     border-radius: 24px;
 }
 
-label.btn.toggle:checked {
+.switch input:checked ~ .toggle{
     background-color: aqua;
 }
