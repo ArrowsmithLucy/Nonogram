@@ -67,11 +67,9 @@ function toggle(i) {
     //     //remove fill/cross classes
     // }
     if (toggleSwitch == 1) {
-        console.log(getLocalStorage(TOGGLE))
         fill(i)
     }
     else if (toggleSwitch == 2) {
-        console.log(getLocalStorage(TOGGLE))
         cross(i)
     }
 }

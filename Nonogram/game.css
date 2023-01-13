@@ -97,20 +97,58 @@
     justify-content: center;
 }
 
+.btn-group {
+    border: black;
+    border-radius: 50px;
+}
 
 
-/* Game controls */
 
-/* 
-.fill {
-    background-color: red;
+/* Testing buttons */
+
+/* label[for="cross"] {
+    background-color: #f5fffd;
+    color: black
+}
+label[for="fill"] {
+    background-color: #4b8189;
 } */
 
-/* When fill is used */
+
+/* Game board */
+
 .fill {
     background-color: #3f5764!important;
 }
 
 .cross {
     background-color: red!important;
+}
+
+/* Game Controls */
+.switch {
+    display: inline-flex;
+    position: relative;
+    width: 88px;
+    height: 44px;
+    background-color: #D9D9D9;
+    border-radius: 24px;
+    padding: 0;
+}
+.switch input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 24px;
+}
+
+label.btn.toggle:checked {
+    background-color: aqua;
 }
